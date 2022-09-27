@@ -11,6 +11,10 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+    Option:{
+      NEXTAUTH_URL: process.env.NEXTAUTH_URL
+    }
+  ,
   callbacks: {
     async session({ session, user, token }) {
       try {
