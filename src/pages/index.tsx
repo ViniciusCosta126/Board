@@ -17,7 +17,7 @@ interface HomeProps {
 }
 export default function Home({ data }: HomeProps) {
   const [donaters, setDonaters] = useState<Data[]>(JSON.parse(data));
-
+  console.log(process.env.NEXTAUTH_URL)
   return (
     <>
       <Head>
